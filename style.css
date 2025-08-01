@@ -1,0 +1,144 @@
+/* Definição de variáveis para as cores, facilitando a alteração futura */
+:root {
+    --verde-limao: #A0D157;
+    --verde-principal: #4CAF50;
+    --amarelo: #FFEB3B;
+    --branco: #FFFFFF;
+    --cinza-claro: #f4f4f4;
+    --preto: #222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.header {
+    background-color: var(--verde-principal);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.header__titulo {
+    color: var(--branco);
+    margin: 0;
+}
+
+.header__nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: var(--amarelo); /* Destaque no hover */
+}
+
+.secao {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao:nth-child(even) {
+    background-color: #333; /* Fundo alternado para seções */
+}
+
+.secao__titulo {
+    color: var(--verde-limao);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.secao__paragrafo {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.projetos__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projeto {
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+}
+
+.projeto__imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.projeto__titulo {
+    color: var(--amarelo);
+    margin-top: 0;
+}
+
+.projeto__descricao {
+    color: var(--cinza-claro);
+    font-size: 0.9rem;
+}
+
+.projeto__link {
+    display: inline-block;
+    background-color: var(--verde-limao);
+    color: var(--preto);
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.projeto__link:hover {
+    background-color: var(--amarelo);
+}
+
+.contato__links {
+    margin-top: 1.5rem;
+}
+
+.contato__link {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contato__link:hover {
+    background-color: var(--verde-limao);
+    color: var(--preto);
+}
+
+.footer {
+    background-color: var(--verde-principal);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
